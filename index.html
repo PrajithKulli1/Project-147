@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>3D Room</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <!-- Floor -->
+      <a-box position="0 -1.5 0" width="50" depth="50" height="0.1"
+             color="#7BC8A4" roughness="0.8" metalness="0.2">
+      </a-box>
+      
+      <!-- Walls -->
+      <a-box position="0 0 -25" width="50" height="10" depth="0.1"
+             color="#4CC3D9" roughness="0.8" metalness="0.2">
+      </a-box>
+      <a-box position="0 0 25" width="50" height="10" depth="0.1"
+             color="#4CC3D9" roughness="0.8" metalness="0.2">
+      </a-box>
+      <a-box position="-25 0 0" width="0.1" height="10" depth="50"
+             color="#4CC3D9" roughness="0.8" metalness="0.2">
+      </a-box>
+      <a-box position="25 0 0" width="0.1" height="10" depth="50"
+             color="#4CC3D9" roughness="0.8" metalness="0.2">
+      </a-box>
+      
+      <!-- Ceiling -->
+      <a-box position="0 10 0" width="50" depth="50" height="0.1"
+             color="#ECECEC" roughness="0.8" metalness="0.2">
+      </a-box>
+      
+    </a-scene>
+  </body>
+</html>
